@@ -1,0 +1,61 @@
+/* öncelikle body kısmında kenarlıkları sıfırlamak istiyoruz */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(bg.jpg);
+  /* arka planı biraz ortalamak istiyoruz bu nedenle size cover deriz  */
+  background-size: cover;
+}
+/* sıra pp yi içine alacak kutuyu tasarlamada, bunu box classı üzerinden yaparız */
+img {
+  width: 50%;
+  border-radius: 50%;
+  /* imleci fotoya götürdüğümüzde değişim olsun istiyoruz bunun için cursor kullanırız*/
+  transition: 0.5s;
+  cursor: pointer;
+}
+.box {
+  width: 450px;
+  background: #97c4b8;
+  /* box içerisinde yer alan her şeyin arasında boşluk bırakmak için padding kullandık*/
+  padding: 40px;
+  text-align: center; /* box içindeki her şey centerlandı */
+  margin: auto; /* tamamen ortalanması içi */
+  /* background ve box arasında boşluk olsun istiyoruz bunun için */
+  margin-top: 5%;
+  /* yazıyı beyaz yapmak istiyoruz ve tipi de san serif */
+  color: #fff;
+  font-family: sans-serif;
+}
+.box img:hover {
+  transform: scale(0.9);
+}
+.box h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100px;
+}
+.box h5 {
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+.box p {
+  text-align: justify; /* yazıyı eşit şekilde ortaladık */
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.box li {
+  display: inline-block; /* iconları tek satırda topladık */
+  margin: 6px;
+  list-style: none;
+}
+.box li a {
+  color: #fff;
+  font-size: 60px;
+}
+.box li a:hover {
+  color: #b9b9b9;
+}
